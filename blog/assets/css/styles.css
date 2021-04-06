@@ -18,6 +18,9 @@ figcaption {
 .text-uppercase {
   text-transform:   uppercase;
 }
+.text-break {
+  word-break:       break-word;
+}
 .font-weight-bold {
   font-weight:      bold;
 }
