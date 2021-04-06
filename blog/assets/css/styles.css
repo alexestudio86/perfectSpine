@@ -1,0 +1,72 @@
+body, html {
+  margin:           0;
+  padding:          0;
+  height:           100%;
+  width:            100%;
+  scroll-behavior:  smooth;
+  }
+p, h1, h2, h3, h4, h5, h6, figure, ul {
+  margin:           0;
+}
+ul {
+  padding:          0;
+}
+figcaption {
+  height:           50px;
+  padding:          4px 8px;
+}
+.text-uppercase {
+  text-transform:   uppercase;
+}
+.font-weight-bold {
+  font-weight:      bold;
+}
+.mt-1 {
+  margin-top:       4px;
+}
+.mt-2 {
+  margin-top:       8px;
+}
+.mt-4 {
+  margin-top:       56px;
+}
+.mb-1 {
+  margin-bottom:    4px;
+}
+.mb-2 {
+  margin-bottom:    8px;
+}
+.mb-4 {
+  margin-bottom:    56px;
+}
+.pl-1 {
+  padding-left:     4px;
+}
+.pr-1 {
+  padding-right:    4px;
+}
+.w-100 {
+  width:            100%;
+}
+.h-96 {
+  height:			      96%;
+}
+.h-auto {
+  height:			      auto;
+}
+
+/* Background video  */
+#dkBgHeader {
+  width:			      100%;
+  height:			      300px;
+  object-fit:		    cover;
+  border-radius:	  8px 8px 0 0;
+}
+#mbBgHeader {
+  width:			      100%;
+  height:			      400px;
+  object-fit:		    cover;
+}
+.rounded-bottom {
+  border-radius:	  0 0 8px 8px;
+}
