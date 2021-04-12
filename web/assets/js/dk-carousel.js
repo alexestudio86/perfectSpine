@@ -72,10 +72,31 @@ const dotsSlideshow = () => {
   this.classList.add('activeSlide');
 }
 
-// Show search bar in desktop
-const showBar = () => {
-  let search = document.querySelector('#searchBar + div'); 
-      search.classList.toggle('w3-show');
-      searchInput = document.querySelector('#searchBarInput');
-      searchInput.focus();
+// Start slideshow
+autoSlideshow();
+
+// Show prev and next button	
+let headerButtons = document.querySelectorAll('#home > div  > a');
+document.querySelector('#home').addEventListener('mouseover', function(){
+  for(let info of headerButtons){
+    info.classList.toggle('w3-show');
+  }
+});
+document.querySelector('#home').addEventListener('mouseout', function(){
+  for(info of headerButtons){
+    info.classList.toggle('w3-show');
+  }
+});
+
+// Add event to prev and next
+for(let info of headerButtons){
+    info.addEventListener('click', manualSlideshow);
+}
+
+// Dots slide header
+headerDots = document.querySelectorAll('#home > div > div.dots > a');
+if(headerDots){
+  for(let dot of headerDots){
+    dot.addEventListener('click', dotsSlideshow)
+  }
 }
