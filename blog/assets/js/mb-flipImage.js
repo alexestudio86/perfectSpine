@@ -11,3 +11,9 @@ const flipimage = () => {
   flipCarda.classList.toggle('w3-show');
   flipCardb.classList.toggle('w3-show');
 }
+
+// Add events for flip cards 3d
+articulo = document.querySelectorAll('article div[front]');
+for(let image of articulo){
+  image.addEventListener('click', flipimage);
+}
