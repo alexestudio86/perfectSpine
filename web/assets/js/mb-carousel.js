@@ -41,3 +41,18 @@ const manualSlideshow = () => {
   }
   totalSlides[slideNumber].classList.add('w3-show');
 }
+
+// Variables slideshow buttons
+prev = document.querySelectorAll('.prev');
+next = document.querySelectorAll('.next');
+
+// Inicializador de slideshow automatic
+autoSlideshow();
+
+// Add event to slides
+for(let btn of prev){
+  btn.addEventListener('click', manualSlideshow);
+};
+for(let btn of next){
+  btn.addEventListener('click', manualSlideshow);
+}
