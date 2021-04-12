@@ -1,4 +1,5 @@
 // GOOGLE MAPS
+
 const loadMap = () => {
   var mapa = document.getElementById('map');
       mapa.innerHTML = '';
@@ -43,3 +44,7 @@ const loadMap = () => {
     map.setOptions({ styles: styles })
     mapa.style = 'height:400px; width:90%; margin:0 auto 0 auto';
 }
+
+// Map variable
+mapa = document.querySelector('#map img');
+mapa.addEventListener('click', loadMap);
