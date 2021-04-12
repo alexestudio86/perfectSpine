@@ -27,6 +27,9 @@ figcaption {
 .font-weight-bold {
   font-weight:      bold;
 }
+.black-transparent-medium {
+  background: rgba(0,0,0,0.5);
+}
 .mt-1 {
   margin-top:       4px;
 }
@@ -74,20 +77,4 @@ figcaption {
 }
 .h-auto {
   height:			      auto;
-}
-
-/* Background video  */
-#dkBgHeader {
-  width:			      100%;
-  height:			      300px;
-  object-fit:		    cover;
-  border-radius:	  8px 8px 0 0;
-}
-#mbBgHeader {
-  width:			      100%;
-  height:			      400px;
-  object-fit:		    cover;
-}
-.rounded-bottom {
-  border-radius:	  0 0 8px 8px;
 }
