@@ -17,3 +17,9 @@ articulo = document.querySelectorAll('article div[front]');
 for(let image of articulo){
   image.addEventListener('click', flipimage);
 }
+
+// Add event to image
+regresaArticulo = document.querySelectorAll('article i[flipcard]');
+for(let btn of regresaArticulo){
+  btn.addEventListener('click', flipimage);
+}
