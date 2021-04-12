@@ -5,12 +5,6 @@ var slideNumber;
     prev = document.querySelector('.prev');
     next = document.querySelector('.next');
     headerDots = document.querySelectorAll('#home > div > div.dots > a');
-if(prev){
-  prev.addEventListener('click', manualSlideshow)
-}
-if(next){
-  next.addEventListener('click', manualSlideshow)
-}
 
 // Autoslide
 const autoSlideshow = () => {
@@ -74,6 +68,12 @@ const dotsSlideshow = () => {
 
 // Start slideshow
 autoSlideshow();
+if(prev){
+  prev.addEventListener('click', manualSlideshow)
+}
+if(next){
+  next.addEventListener('click', manualSlideshow)
+}
 
 // Show prev and next button	
 let headerButtons = document.querySelectorAll('#home > div  > a');
