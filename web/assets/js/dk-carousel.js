@@ -28,17 +28,17 @@ const autoSlideshow = () => {
 }
 
 // Manual slide
-const manualSlideshow = () => {
+const manualSlideshow = (e) => {
   for(let slide of totalSlides){
     slide.classList.remove('w3-show');
   }
-  if(this.classList.contains("prev")){
+  if(e.currentTarget.classList.contains("prev")){
     if(slideNumber == 0){
       slideNumber = totalSlides.length-1;
     }else{
       slideNumber--;
     }
-  }else if(this.classList.contains("next")){
+  }else if(e.currentTarget.classList.contains("next")){
     if(slideNumber == totalSlides.length-1){
       slideNumber = 0;
     }else{
