@@ -53,8 +53,8 @@ const manualSlideshow = (e) => {
   headerDots[slideNumber].classList.add('activeSlide');
 }
 
-const dotsSlideshow = () => {
-  slideNumber = this.getAttribute('slideNum');
+const dotsSlideshow = (e) => {
+  slideNumber = e.currentTarget.getAttribute('slideNum');
   for(slide of totalSlides){
     slide.classList.remove('w3-show');
   }
@@ -63,7 +63,7 @@ const dotsSlideshow = () => {
     info.classList.remove('activeSlide');
   }
   totalSlides[slideNumber].classList.add('w3-show');
-  this.classList.add('activeSlide');
+  e.currentTarget.classList.add('activeSlide');
 }
 
 // Start slideshow
