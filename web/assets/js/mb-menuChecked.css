@@ -1,0 +1,6 @@
+navsElements = document.querySelectorAll('#PageList1 > a');
+for(let navsElement of navsElements){
+  navsElement.addEventListener('click', () => {
+	document.querySelector('#menu-bar').click();
+  });
+}
